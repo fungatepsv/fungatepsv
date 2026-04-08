@@ -2,15 +2,41 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Fungatepsv - Em construção</title>
+    <title>FunGatePSV - Copa 2026</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-<body>
-    <div class="box">
-        <h1>⚽ Copa do Mundo 2026</h1>
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            font-family:Segoe UI, Arial, sans-serif;
+            background: linear-gradient(135deg, #2b1055, #6a00f4);
+            color:white;
+            text-align:center;
+        }
 
-        <a href="arquivos/Copa do Mundo 2026 - Tabela.pdf" download style="
+        .box{
+            background: rgba(0,0,0,0.35);
+            padding:40px 60px;
+            border-radius:16px;
+            backdrop-filter: blur(6px);
+        }
+
+        h1{
+            margin:0 0 10px;
+            font-size:36px;
+        }
+
+        p{
+            margin:10px 0;
+            opacity:0.9;
+        }
+
+        .btn{
             display:inline-block;
             margin-top:20px;
             padding:12px 20px;
@@ -19,22 +45,51 @@
             border-radius:8px;
             text-decoration:none;
             font-weight:bold;
-        ">
+        }
+
+        .btn:hover{
+            background:#9333ea;
+        }
+
+        .social{
+            margin-top:30px;
+            font-size:18px;
+            opacity:0.95;
+        }
+
+        .social a{
+            color:#d6b8ff;
+            text-decoration:none;
+            font-weight:600;
+        }
+
+        .social a:hover{
+            text-decoration:underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1>⚽ Copa do Mundo 2026</h1>
+
+        <a href="arquivos/Copa do Mundo 2026 - Tabela.pdf" download class="btn">
             📥 Baixar Tabela
         </a>
 
-        <p style="margin-top:25px;">
+        <p>
             No PDF, que você pode baixar quantas vezes quiser, não tem a Classificação.<br>
             A Classificação é uma página interativa, no momento só existe na planilha disponível.
         </p>
 
-        <p style="margin-top:10px;">
+        <p>
             Imprima, baixe a planilha, divirta-se!!!
         </p>
 
         <img src="images/qr.png" width="180" style="margin-top:20px;">
 
-        <p style="margin-top:10px; font-size:14px;">
+        <p style="font-size:14px;">
             Não é obrigatório, mas se quiser nos incentivar, pode nos pagar um cafezinho. 😅
         </p>
     </div>
@@ -47,5 +102,6 @@
             <a href="https://x.com/fungateps" target="_blank">@fungateps</a>
         </p>
     </div>
+
 </body>
 </html>
